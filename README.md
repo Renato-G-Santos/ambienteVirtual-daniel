@@ -1,2 +1,2 @@
 # site-de-vendas
-aqui vou praticar criar um site de venda e usa-lo para vender coisas 
+Exemplo de site de venda feito por mim 
