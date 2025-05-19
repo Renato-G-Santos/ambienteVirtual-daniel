@@ -1,2 +1,2 @@
-# site-de-vendas
-Exemplo de site de venda feito por mim 
+Projeto Django com ambiente virtual com colocaboração de 
+
