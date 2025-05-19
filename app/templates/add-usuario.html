@@ -1,0 +1,16 @@
+{% block titulo %}
+    Novo Usuário
+{% endblock %}
+
+{% block conteudo %}
+    <div class="container mt-5">
+        <h1>Cadastrar Novo Usuário</h1>
+        <form method="post" class="form-group">
+            {% csrf_token %}
+            {{ form.as_p }}  <!-- Renderiza o formulário -->
+            <div class="form-group">
+                <input type="submit" value="Cadastrar" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+{% endblock %}

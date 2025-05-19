@@ -1,0 +1,17 @@
+<h2>Produtos Cadastrados</h2>
+  <a href="{% url 'produtos_card' %}">Ir para a pagina para exibir Produtos (card)</a><br><div style="display: flex; flex-wrap: wrap; gap: 20px;">
+  <a href="{% url 'cadastrar_produto' %}">Click aqui para cadastrar produtos (card)</a><br><div style="display: flex; flex-wrap: wrap; gap: 20px;">
+    
+  {% for produto in produtos %}
+    <div style="border: 1px solid #ccc; padding: 10px; width: 200px;">
+      <img src="{{ produto.foto.url }}" style="width: 100%;">
+      <h3>{{ produto.nome }}</h3>
+      <p>{{ produto.descricao }}</p>
+      <p><strong>R$ {{ produto.preco }}</strong></p>
+      <p>Estoque: {{ produto.estoque }}</p>
+      <a href="{% url 'editar_produto' produto.id %}">Editar</a> |
+      <a href="{% url 'excluir_produto' produto.id %}">Excluir</a>
+    </div>
+  {% endfor %}
+</div>
+ 
